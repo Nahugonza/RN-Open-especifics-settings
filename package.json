@@ -1,5 +1,5 @@
 {
-  "name": "react-native-open-especifics-settings",
+  "name": "rn-open-especifics-settings",
   "version": "2.3.0",
   "description": "Open specific Android settings for your native answer application",
   "main": "index.js",
@@ -24,7 +24,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FlavioTeodosio/react-native-open-especifics-settings.git"
+    "url": "git+https://github.com/Nahugonza/RN-Open-especifics-settings.git"
   },
   "peerDependencies": {
     "react-native": "^0.41.2",
