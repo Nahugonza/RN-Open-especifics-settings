@@ -1,22 +1,22 @@
 
-# react-native-open-especifics-settings
+# rn-open-especifics-settings
 
 This module allows us to open device-specific settings. For example, if we want to open the GPS configuration to see if it is on / off or change it, or open the Location configuration window or Wifi, battery and others.
 
 ## Getting started
 
-`$ npm install react-native-open-especifics-settings --save`
+`$ npm install rn-open-especifics-settings --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-open-especifics-settings`
+`$ react-native link rn-open-especifics-settings`
 
 ### Manual installation
 
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-open-especifics-settings` and add `RNOpenEspecificsSettings.xcodeproj`
+2. Go to `node_modules` ➜ `rn-open-especifics-settings` and add `RNOpenEspecificsSettings.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNOpenEspecificsSettings.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -27,12 +27,12 @@ This module allows us to open device-specific settings. For example, if we want 
   - Add `new RNOpenEspecificsSettingsPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-open-especifics-settings'
-  	project(':react-native-open-especifics-settings').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-open-especifics-settings/android')
+  	include ':rn-open-especifics-settings'
+  	project(':rn-open-especifics-settings').projectDir = new File(rootProject.projectDir, 	'../node_modules/rn-open-especifics-settings/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-open-especifics-settings')
+      compile project(':rn-open-especifics-settings')
   	```
 
 ## Usage
@@ -53,7 +53,7 @@ This module allows us to open device-specific settings. For example, if we want 
 Note: Due to major changes to the Apple device access policy, only access to the main menu is available.
 
 ```javascript
-import RNOpenEspecificsSettings from 'react-native-open-especifics-settings';
+import RNOpenEspecificsSettings from 'rn-open-especifics-settings';
 
 // Opens the especific settings window, example: 'location'.
 RNOpenEspecificsSettings.openSettings('location')
