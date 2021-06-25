@@ -1,6 +1,6 @@
 {
   "name": "rn-open-especifics-settings",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Open specific Android settings for your native answer application",
   "main": "index.js",
   "scripts": {
